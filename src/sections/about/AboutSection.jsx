@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
-import FadeIn from "../../components/MotionWrapper/FadeIn";
+import { Row, Col, Image, Button } from "react-bootstrap";
 import AboutModal from "./AboutModal";
+import AppSection from "../../components/App/AppSection";
 
 export default function AboutSection() {
   const [showModal, setShowModal] = useState(false);
@@ -46,56 +46,59 @@ export default function AboutSection() {
   };
 
   return (
-    <FadeIn>
-      <section id="aboutSection" className={`pt-5 pb-5`}>
-        <Container className="text-center">
-          <h1 className="text-start mb-5 fw-bold">
-            <i className="bi bi-people-fill text-mh-primary"> </i>Biografi
-            <div className="section-title-line"></div>
-          </h1>
-          <Row>
-            <Col md={6} className="mb-lg-0 mb-5">
-              <Image
-                className="shadow rounded-5"
-                width="300"
-                src="h-muhidin.webp"
-                fluid
-              />
-              <h2 className="mt-3">H. Muhidin</h2>
-              <p className="fst-italic">Calon Gubernur Kalsel</p>
-              <Button
-                variant="primary"
-                className="bg-mh-primary text-light"
-                onClick={() => handleShowModal(hMuhidin)}
-              >
-                Tampilkan Biografi
-              </Button>
-            </Col>
-            <Col md={6}>
-              <Image
-                className="shadow rounded-5"
-                width="300"
-                src="h-hasnur.webp"
-                fluid
-              />
-              <h2 className="mt-3">H. Hasnuryadi Sulaiman</h2>
-              <p className="fst-italic">Calon Wakil Gubernur Kalsel</p>
-              <Button
-                variant="primary"
-                className="bg-mh-primary text-light"
-                onClick={() => handleShowModal(hasnur)}
-              >
-                Tampilkan Biografi
-              </Button>
-            </Col>
-          </Row>
-          <AboutModal
-            showModal={showModal}
-            selectedMH={selectedMH}
-            handleClose={handleCloseModal}
+    // <FadeIn>
+    //   <section id="aboutSection" className={`pt-5 pb-5`}>
+    //     <Container className="text-center">
+    //       <h1 className="text-start mb-5 fw-bold">
+    //         <i className="bi bi-people-fill text-mh-primary"> </i>Biografi
+    //         <div className="section-title-line"></div>
+    //       </h1>
+    <AppSection id="AboutSection" title="Biografi" icon="bi-people-fill">
+      <Row className="text-center">
+        <Col md={6} className="mb-lg-0 mb-5">
+          <Image
+            className="shadow rounded-5"
+            width="300"
+            src="h-muhidin.webp"
+            fluid
           />
-        </Container>
-      </section>
-    </FadeIn>
+          <h2 className="mt-3">H. Muhidin</h2>
+          <p className="fst-italic">Calon Gubernur Kalsel</p>
+          <Button
+            variant="primary"
+            className="bg-mh-primary text-light"
+            onClick={() => handleShowModal(hMuhidin)}
+          >
+            Tampilkan Biografi
+          </Button>
+        </Col>
+        <Col md={6}>
+          <Image
+            className="shadow rounded-5"
+            width="300"
+            src="h-hasnur.webp"
+            fluid
+          />
+          <h2 className="mt-3">H. Hasnuryadi Sulaiman</h2>
+          <p className="fst-italic">Calon Wakil Gubernur Kalsel</p>
+          <Button
+            variant="primary"
+            className="bg-mh-primary text-light"
+            onClick={() => handleShowModal(hasnur)}
+          >
+            Tampilkan Biografi
+          </Button>
+        </Col>
+      </Row>
+      <AboutModal
+        showModal={showModal}
+        selectedMH={selectedMH}
+        handleClose={handleCloseModal}
+      />
+    </AppSection>
+
+    //     </Container>
+    //   </section>
+    // </FadeIn>
   );
 }

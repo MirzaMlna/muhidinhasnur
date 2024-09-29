@@ -37,7 +37,7 @@ export default function AboutModal({ showModal, selectedMH, handleClose }) {
           {selectedMH?.age}
         </h5>
         <h5>
-          <span className="fw-bold">Pengalaman Menjabat: </span>
+          <span className="fw-bold">Beberapa Pengalaman Menjabat: </span>
         </h5>
         <ListGroup>
           {selectedMH?.experience?.map((exp, index) => (
