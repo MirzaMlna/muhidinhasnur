@@ -46,13 +46,6 @@ export default function AboutSection() {
   };
 
   return (
-    // <FadeIn>
-    //   <section id="aboutSection" className={`pt-5 pb-5`}>
-    //     <Container className="text-center">
-    //       <h1 className="text-start mb-5 fw-bold">
-    //         <i className="bi bi-people-fill text-mh-primary"> </i>Biografi
-    //         <div className="section-title-line"></div>
-    //       </h1>
     <AppSection id="AboutSection" title="Biografi" icon="bi-people-fill">
       <Row className="text-center">
         <Col md={6} className="mb-lg-0 mb-5">
@@ -96,9 +89,5 @@ export default function AboutSection() {
         handleClose={handleCloseModal}
       />
     </AppSection>
-
-    //     </Container>
-    //   </section>
-    // </FadeIn>
   );
 }
