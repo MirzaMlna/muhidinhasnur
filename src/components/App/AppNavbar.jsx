@@ -1,12 +1,7 @@
 import PropTypes from "prop-types";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
-AppNavbar.propTypes = {
-  handleIsDarkTheme: PropTypes.func,
-  isDarkTheme: PropTypes.bool,
-};
-
-export default function AppNavbar({ handleIsDarkTheme, isDarkTheme }) {
+const AppNavbar = ({ handleIsDarkTheme, isDarkTheme }) => {
   return (
     <Navbar data-bs-theme="dark" className="sticky-top shadow bg-mh-primary">
       <Container>
@@ -27,4 +22,11 @@ export default function AppNavbar({ handleIsDarkTheme, isDarkTheme }) {
       </Container>
     </Navbar>
   );
-}
+};
+
+AppNavbar.propTypes = {
+  handleIsDarkTheme: PropTypes.func,
+  isDarkTheme: PropTypes.bool,
+};
+
+export default AppNavbar;

@@ -5,7 +5,7 @@ HeroSection.propTypes = {
   isDarkTheme: PropTypes.bool,
 };
 
-function HeroSection({ isDarkTheme }) {
+const HeroSection = ({ isDarkTheme }) => {
   return (
     <section
       id="heroSection"
@@ -34,6 +34,6 @@ function HeroSection({ isDarkTheme }) {
       </Container>
     </section>
   );
-}
+};
 
 export default HeroSection;
