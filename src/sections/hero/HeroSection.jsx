@@ -1,10 +1,6 @@
 import PropTypes from "prop-types";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-HeroSection.propTypes = {
-  isDarkTheme: PropTypes.bool,
-};
-
 const HeroSection = ({ isDarkTheme }) => {
   return (
     <section
@@ -34,6 +30,10 @@ const HeroSection = ({ isDarkTheme }) => {
       </Container>
     </section>
   );
+};
+
+HeroSection.propTypes = {
+  isDarkTheme: PropTypes.bool,
 };
 
 export default HeroSection;

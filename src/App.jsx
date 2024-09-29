@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AppNavbar from "./components/App/AppNavbar";
 import HeroSection from "./sections/hero/HeroSection";
+import AboutSection from "./sections/about/AboutSection";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -18,6 +19,7 @@ function App() {
         handleIsDarkTheme={handleIsDarkTheme}
       />
       <HeroSection isDarkTheme={isDarkTheme} />
+      <AboutSection />
     </div>
   );
 }
