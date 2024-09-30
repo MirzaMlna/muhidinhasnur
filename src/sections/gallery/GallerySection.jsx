@@ -38,7 +38,7 @@ const GallerySection = ({ isDarkTheme }) => {
 
   return (
     <AppSection id="GallerySection" title="Galeri" icon="bi-images">
-      <i className={`fs-3 fw-bold ${isDarkTheme ? "text-light" : "text-dark"}`}>
+      <i className={`fs-4 fw-bold ${isDarkTheme ? "text-light" : "text-dark"}`}>
         Geser Untuk Melihat Gambar Lainnya &#10609;
       </i>
       <Row className="px-lg-0 px-2 mt-2 overflow-x-scroll flex-nowrap">

@@ -15,7 +15,9 @@ const HeroSection = ({ isDarkTheme }) => {
           <Col md={1}></Col>
           <Col md={6} className="text-md-start text-center mt-lg-0 mt-4">
             <h1 className="display-4 fw-bold">MUHIDIN-HASNUR</h1>
-            <p className="lead typewriter">Bekerja Bersama Merangkul Semua</p>
+            <p className="fw-bold fst-italic fs-3">
+              Bekerja Bersama Merangkul Semua
+            </p>
             <audio
               controls
               loop={true}
@@ -24,7 +26,9 @@ const HeroSection = ({ isDarkTheme }) => {
             >
               Minta Rela, Browser Pian Kada Mendukung Gasan Memutar Lagu.
             </audio>
-            {/* <p className="fw-bold">&uarr; Putar Lagu Muhidin-Hasnur &uarr;</p> */}
+            <p className="fst-italic">
+              &uarr; Putar Lagu Muhidin-Hasnur &uarr;
+            </p>
           </Col>
         </Row>
       </Container>
