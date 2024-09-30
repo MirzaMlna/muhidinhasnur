@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import FadeIn from "../MotionWrapper/FadeIn";
+import { Container } from "react-bootstrap";
 
 const AppSection = ({
   id = "null",
@@ -10,11 +11,13 @@ const AppSection = ({
   return (
     <FadeIn>
       <section id={id} className="px-2 px-md-5 py-5">
-        <div className="display-6 fw-bold text-start mb-5">
-          <i className={`bi ${icon} text-mh-primary`}></i> {title}
-          <div className="section-title-line"></div>
-        </div>
-        {children}
+        <Container>
+          <div className="display-6 fw-bold text-start mb-5">
+            <i className={`bi ${icon} text-mh-primary`}></i> {title}
+            <div className="section-title-line"></div>
+          </div>
+          {children}
+        </Container>
       </section>
     </FadeIn>
   );

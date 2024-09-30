@@ -5,6 +5,7 @@ import AboutSection from "./sections/about/AboutSection";
 import SynergySection from "./sections/synergy/SynergySection";
 import VMSection from "./sections/visionAndMission/VMSection";
 import CampaignPromisesSection from "./sections/campaignPromises/CampaignPromises";
+import QNASection from "./sections/qnaSection/QNASection";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -26,6 +27,7 @@ function App() {
       <SynergySection />
       <VMSection isDarkTheme={isDarkTheme} />
       <CampaignPromisesSection isDarkTheme={isDarkTheme} />
+      <QNASection isDarkTheme={isDarkTheme} />
     </div>
   );
 }

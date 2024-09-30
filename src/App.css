@@ -8,6 +8,11 @@
   font-family: "Nunito", sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .section-title-line {
   margin-top: 10px;
   border: 3px solid var(--mh-primary);
