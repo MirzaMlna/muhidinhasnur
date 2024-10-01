@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="py-5 bg-mh-primary text-light">
       <Container>
-        <Row className="text-center fs-5">
+        <Row className="text-center fs-6">
           <Col>
             <p className="mt-4">
               &copy;{" "}
