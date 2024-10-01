@@ -4,12 +4,19 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={`py-5 bg-mh-primary text-light`}>
+    <footer className="py-5 bg-mh-primary text-light">
       <Container>
-        <Row className="">
-          <Col className="text-center">
-            <p>
-              &copy; {currentYear} Muhidin Hasnur Official. All rights reserved.
+        <Row className="text-center fs-5">
+          <Col>
+            <p className="mt-4">
+              &copy;{" "}
+              <a
+                href="https://muhidinhasnur.id/"
+                className="text-decoration-none text-light"
+              >
+                MUHIDINHASNUR
+              </a>{" "}
+              Created By Mirza Maulana {currentYear}
             </p>
           </Col>
         </Row>
