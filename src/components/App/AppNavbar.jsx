@@ -13,7 +13,10 @@ const AppNavbar = ({ handleIsDarkTheme, isDarkTheme }) => {
           <Nav.Link href="https://www.instagram.com/muhidinhasnur_official/">
             <i className={`fs-5 bi bi-instagram`}></i>
           </Nav.Link>
-          <Nav.Link href="https://www.facebook.com/profile.php?id=61561286334437r">
+          <Nav.Link
+            href="https://www.facebook.com/share/wd2F7Nbx7ZXmWZYR/?mibextid=qi2Omg
+          "
+          >
             <i className={`fs-5 bi bi-facebook`}></i>
           </Nav.Link>
           <Nav.Link>
