@@ -5,6 +5,16 @@ import { Col, Row, Card } from "react-bootstrap";
 const GallerySection = ({ isDarkTheme }) => {
   const datas = [
     {
+      image: "./assets/gallery/debat-sesi-1.webp",
+      title: "Pengundian Nomor Urut Paslon Gubernur & Wakil Gubernur Kalsel",
+      date: "23 September 2024",
+    },
+    {
+      image: "./assets/gallery/pengundian.webp",
+      title: "Pengundian Nomor Urut Paslon Gubernur & Wakil Gubernur Kalsel",
+      date: "23 September 2024",
+    },
+    {
       image: "./assets/gallery/pengundian.webp",
       title: "Pengundian Nomor Urut Paslon Gubernur & Wakil Gubernur Kalsel",
       date: "23 September 2024",
@@ -62,6 +72,14 @@ const GallerySection = ({ isDarkTheme }) => {
           </Col>
         ))}
       </Row>
+      <div className="mt-5 d-flex justify-content-center text-center align-items-center">
+        <a
+          className="fs-4"
+          href="https://drive.google.com/drive/folders/1sD1vbF6E0J_4_3jaVVlS-aH-Xx4On6Hl?usp=sharing"
+        >
+          Klik untuk mendapatkan asset desain & lagu Muhidin-Hasnur
+        </a>
+      </div>
     </AppSection>
   );
 };
